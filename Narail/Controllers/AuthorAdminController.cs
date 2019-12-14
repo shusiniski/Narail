@@ -10,12 +10,14 @@ namespace Narail.Controllers
     public class AuthorAdminController : Controller
     {
 
-        NarailDBEntities db = new NarailDBEntities();
-
         // GET: AuthorAdmin
         public ActionResult Index()
         {
-            return View(db.Author.ToList());
+            using (NarailDBEntities db = new NarailDBEntities())
+            {
+                var a = db.Authors.ToList();
+                return View(a);
+            }
         }
     }
 }

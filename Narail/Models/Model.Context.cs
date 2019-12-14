@@ -25,6 +25,6 @@ namespace Narail.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Author> Author { get; set; }
+        public virtual DbSet<Author> Authors { get; set; }
     }
 }

@@ -21,7 +21,7 @@ namespace Narail.Models
         public string Password { get; set; }
         public Nullable<System.DateTime> AddedDate { get; set; }
         public string AddedBy { get; set; }
-        public System.DateTime ModifyDate { get; set; }
+        public Nullable<System.DateTime> ModifyDate { get; set; }
         public string ModifyBy { get; set; }
         public string Image { get; set; }
         public string Role { get; set; }

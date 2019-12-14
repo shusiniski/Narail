@@ -14,7 +14,7 @@ namespace Narail.Controllers
         // GET: Login
         public ActionResult Index()
         {
-            var model = db.Author.ToList();
+            var model = db.Authors.ToList();
             return View();
         }
     }
