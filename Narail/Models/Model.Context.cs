@@ -26,5 +26,6 @@ namespace Narail.Models
         }
     
         public virtual DbSet<Author> Authors { get; set; }
+        public object Author { get; internal set; }
     }
 }

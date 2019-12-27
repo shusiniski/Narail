@@ -49,6 +49,18 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="EO.Base, Version=19.2.91.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.Pdf.19.2.91\lib\EO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.Pdf, Version=19.2.91.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.Pdf.19.2.91\lib\EO.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebBrowser, Version=19.2.91.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.Pdf.19.2.91\lib\EO.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebEngine, Version=19.2.91.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.Pdf.19.2.91\lib\EO.WebEngine.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -3973,6 +3985,12 @@
     <Content Include="Views\BlogAdmin\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\AuthorAdmin\Index.cshtml" />
+    <Content Include="Views\AuthorAdmin\Create.cshtml" />
+    <Content Include="Views\AuthorAdmin\Details.cshtml" />
+    <Content Include="Views\AuthorAdmin\Edit.cshtml" />
+    <Content Include="Views\Shared\_Leftsidebar.cshtml" />
+    <Content Include="Views\Shared\_Rightsidebar.cshtml" />
+    <Content Include="Views\Shared\_TopBar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3982,6 +4000,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="images\users\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
